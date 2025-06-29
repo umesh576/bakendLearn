@@ -17,7 +17,7 @@ const upload = multer({ storage: storage });
 server.post(
   "/upload",
   upload.fields([
-    { name: "avatar", maxCount: 1 },
+    { name: "image", maxCount: 1 },
     { name: "gallery", maxCount: 8 },
   ]),
   uploadPhoto
