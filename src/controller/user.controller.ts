@@ -29,7 +29,7 @@ export const createUser = async (req: Request, res: Response) => {
 export const getUser = async (req: Request, res: Response) => {
   try {
     const allUser = await User.find();
-    res.status(400).json({
+    res.status(200).json({
       status: "success",
       statusCode: 200,
       message: "User created successfully.",
