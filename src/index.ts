@@ -48,7 +48,6 @@ app.post(
   (req: Request, res: Response) => {
     console.log(req.body);
     console.log(req.file);
-    res.redirect("/");
   }
 );
 
